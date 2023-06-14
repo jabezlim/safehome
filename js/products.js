@@ -1,6 +1,6 @@
 const product_column_ul = document.querySelector(".product-types");
 const model_column_ul = document.querySelector("#fire-alarm-control-panel");
-const image_file = "./images/productspage/products";
+const image_file = "images/productspage/products";
 
 const { createApp } = Vue;
 
@@ -29,8 +29,7 @@ createApp({
 						},
 						{
 							name: "SAFE UMUX-2244GRC",
-							model_name:
-								"GR-type fire alarm control panel (wall type)",
+							model_name: "GR-type fire alarm control panel (wall type)",
 							img: [
 								image_file +
 									"/fire_alarm_control_panel/" +
@@ -41,8 +40,7 @@ createApp({
 						},
 						{
 							name: "SAFE 2244 DRC",
-							model_name:
-								"Integrated fire monitoring section GDS",
+							model_name: "Integrated fire monitoring section GDS",
 							img: [
 								image_file +
 									"/fire_alarm_control_panel/" +
@@ -97,12 +95,7 @@ createApp({
 						{
 							name: "SAFE UMUX-TERM",
 							model_name: "Transponder (wall type)",
-							img: [
-								image_file +
-									"/transponder/" +
-									"SAFE UMUX-TERM" +
-									".png",
-							],
+							img: [image_file + "/transponder/" + "SAFE UMUX-TERM" + ".png"],
 							isActive: false,
 						},
 					],
@@ -114,17 +107,13 @@ createApp({
 						{
 							name: "TERM-22",
 							model_name: "Repeater 2-circuit",
-							img: [
-								image_file + "/repeater/" + "TERM-22" + ".png",
-							],
+							img: [image_file + "/repeater/" + "TERM-22" + ".png"],
 							isActive: false,
 						},
 						{
 							name: "TERM-44",
 							model_name: "Repeater 4-circuit",
-							img: [
-								image_file + "/repeater/" + "TERM-44" + ".png",
-							],
+							img: [image_file + "/repeater/" + "TERM-44" + ".png"],
 							isActive: false,
 						},
 					],
@@ -136,12 +125,7 @@ createApp({
 						{
 							name: "DS-01",
 							model_name: "Rate of rise heat detector",
-							img: [
-								image_file +
-									"/fire_detector/" +
-									"DS-01" +
-									".png",
-							],
+							img: [image_file + "/fire_detector/" + "DS-01" + ".png"],
 							isActive: false,
 						},
 						{
@@ -159,47 +143,25 @@ createApp({
 							name: "DS-03",
 							model_name:
 								"Photo electric smoke detector 38 103 43.2 120 34 120",
-							img: [
-								image_file +
-									"/fire_detector/" +
-									"DS-03" +
-									".png",
-							],
+							img: [image_file + "/fire_detector/" + "DS-03" + ".png"],
 							isActive: false,
 						},
 						{
 							name: "SF-OS-P LCAL",
-							model_name:
-								"Photo electric analogue type smoke detector",
-							img: [
-								image_file +
-									"/fire_detector/" +
-									"SF-OS-P LCAL" +
-									".png",
-							],
+							model_name: "Photo electric analogue type smoke detector",
+							img: [image_file + "/fire_detector/" + "SF-OS-P LCAL" + ".png"],
 							isActive: false,
 						},
 						{
 							name: "SF-DT-PLCAL",
 							model_name: "Analogue type heat detector",
-							img: [
-								image_file +
-									"/fire_detector/" +
-									"SF-DT-PLCAL" +
-									".png",
-							],
+							img: [image_file + "/fire_detector/" + "SF-DT-PLCAL" + ".png"],
 							isActive: false,
 						},
 						{
 							name: "SF-TERM-PLCAL",
-							model_name:
-								"Power line Communication 37 115 37 115",
-							img: [
-								image_file +
-									"/fire_detector/" +
-									"SF-TERM-PLCAL" +
-									".png",
-							],
+							model_name: "Power line Communication 37 115 37 115",
+							img: [image_file + "/fire_detector/" + "SF-TERM-PLCAL" + ".png"],
 							isActive: false,
 						},
 						{
@@ -221,50 +183,27 @@ createApp({
 					models: [
 						{
 							name: "SF-LED-RF-SS(W)",
-							model_name:
-								"Small one-sided emergency exit light (LED type)",
-							img: [
-								image_file +
-									"/exit_light/" +
-									"SF-LED-RF-SS(W)" +
-									".png",
-							],
+							model_name: "Small one-sided emergency exit light (LED type)",
+							img: [image_file + "/exit_light/" + "SF-LED-RF-SS(W)" + ".png"],
 							isActive: false,
 						},
 						{
 							name: "SF-LED-CP-SS(W)",
-							model_name:
-								" Small one-sided aisle exit light (LED type)",
-							img: [
-								image_file +
-									"/exit_light/" +
-									"SF-LED-CP-SS(W)" +
-									".png",
-							],
+							model_name: " Small one-sided aisle exit light (LED type)",
+							img: [image_file + "/exit_light/" + "SF-LED-CP-SS(W)" + ".png"],
 							isActive: false,
 						},
 						{
 							name: "SF-LED-RF-MS(W)",
-							model_name:
-								"Medium one-sided emergency exit light (LED type)",
-							img: [
-								image_file +
-									"/exit_light/" +
-									"SF-LED-RF-MS(W)" +
-									".png",
-							],
+							model_name: "Medium one-sided emergency exit light (LED type)",
+							img: [image_file + "/exit_light/" + "SF-LED-RF-MS(W)" + ".png"],
 							isActive: false,
 						},
 						{
 							name: "SF-LED-LP-MS(W)",
 							model_name:
 								" Medium one-sided room pathway exit light (LED type)",
-							img: [
-								image_file +
-									"/exit_light/" +
-									"SF-LED-LP-MS(W)" +
-									".png",
-							],
+							img: [image_file + "/exit_light/" + "SF-LED-LP-MS(W)" + ".png"],
 							isActive: false,
 						},
 						{
@@ -283,12 +222,7 @@ createApp({
 							name: "SF-LED-LP-MD(C)",
 							model_name:
 								" Medium double-sided room pathway exit light (ceiling type)",
-							img: [
-								image_file +
-									"/exit_light/" +
-									"SF-LED-LP-MD(C)" +
-									".png",
-							],
+							img: [image_file + "/exit_light/" + "SF-LED-LP-MD(C)" + ".png"],
 							isActive: false,
 						},
 						{
@@ -296,59 +230,32 @@ createApp({
 							model_name:
 								"Medium one-sided emergency exit light (LED type, wide type)",
 							img: [
-								image_file +
-									"/exit_light/" +
-									"SF-LED-RF-MC(W-WD)" +
-									".png",
+								image_file + "/exit_light/" + "SF-LED-RF-MC(W-WD)" + ".png",
 							],
 							isActive: false,
 						},
 						{
 							name: "SF-LED-SP-MC(W)",
-							model_name:
-								" Medium one-sided stairway exit light (LED type)",
-							img: [
-								image_file +
-									"/exit_light/" +
-									"SF-LED-SP-MC(W)" +
-									".png",
-							],
+							model_name: " Medium one-sided stairway exit light (LED type)",
+							img: [image_file + "/exit_light/" + "SF-LED-SP-MC(W)" + ".png"],
 							isActive: false,
 						},
 						{
 							name: "SF-LED-RF-LS(C)",
-							model_name:
-								"Large one-sided emergency exit light (ceiling type)",
-							img: [
-								image_file +
-									"/exit_light/" +
-									"SF-LED-RF-LS(C)" +
-									".png",
-							],
+							model_name: "Large one-sided emergency exit light (ceiling type)",
+							img: [image_file + "/exit_light/" + "SF-LED-RF-LS(C)" + ".png"],
 							isActive: false,
 						},
 						{
 							name: "EL-FR266SL3-P",
-							model_name:
-								" Medium floor mounted concealed aisle exit light",
-							img: [
-								image_file +
-									"/exit_light/" +
-									"EL-FR266SL3-P" +
-									".png",
-							],
+							model_name: " Medium floor mounted concealed aisle exit light",
+							img: [image_file + "/exit_light/" + "EL-FR266SL3-P" + ".png"],
 							isActive: false,
 						},
 						{
 							name: "SF-LED-SP-SC(W)",
-							model_name:
-								"Small one-sided stairway exit light (LED type)",
-							img: [
-								image_file +
-									"/exit_light/" +
-									"SF-LED-SP-SC(W)" +
-									".png",
-							],
+							model_name: "Small one-sided stairway exit light (LED type)",
+							img: [image_file + "/exit_light/" + "SF-LED-SP-SC(W)" + ".png"],
 							isActive: false,
 						},
 						{
@@ -367,12 +274,7 @@ createApp({
 							name: "EL-WS250S-SV",
 							model_name:
 								" Large sound flickering one-sided emergency exit light",
-							img: [
-								image_file +
-									"/exit_light/" +
-									"EL-WS250S-SV" +
-									".png",
-							],
+							img: [image_file + "/exit_light/" + "EL-WS250S-SV" + ".png"],
 							isActive: false,
 						},
 					],
@@ -385,26 +287,15 @@ createApp({
 							name: "POW-O24",
 							model_name: "Auxiliary power panel / Battery panel",
 							img: [
-								image_file +
-									"/supporting_equipment/" +
-									"POW-O24" +
-									".png",
-								image_file +
-									"/supporting_equipment/" +
-									"POW-O24-2" +
-									".png",
+								image_file + "/supporting_equipment/" + "POW-O24" + ".png",
+								image_file + "/supporting_equipment/" + "POW-O24-2" + ".png",
 							],
 							isActive: false,
 						},
 						{
 							name: "SP-O40",
 							model_name: "Annunciator panel",
-							img: [
-								image_file +
-									"/supporting_equipment/" +
-									"SP-O40" +
-									".png",
-							],
+							img: [image_file + "/supporting_equipment/" + "SP-O40" + ".png"],
 							isActive: false,
 						},
 					],
@@ -466,34 +357,19 @@ createApp({
 						{
 							name: "PV-SVP-B",
 							model_name: "SPRINKLER manual station",
-							img: [
-								image_file +
-									"/manual_station/" +
-									"PV-SVP-B" +
-									".png",
-							],
+							img: [image_file + "/manual_station/" + "PV-SVP-B" + ".png"],
 							isActive: false,
 						},
 						{
 							name: "PV-DAMPER-B",
 							model_name: "DAMPER manual station",
-							img: [
-								image_file +
-									"/manual_station/" +
-									"PV-DAMPER-B" +
-									".png",
-							],
+							img: [image_file + "/manual_station/" + "PV-DAMPER-B" + ".png"],
 							isActive: false,
 						},
 						{
 							name: "PV-CO2-B",
 							model_name: "Extinguishing agent manual station ",
-							img: [
-								image_file +
-									"/manual_station/" +
-									"PV-CO2-B" +
-									".png",
-							],
+							img: [image_file + "/manual_station/" + "PV-CO2-B" + ".png"],
 							isActive: false,
 						},
 					],
@@ -505,67 +381,37 @@ createApp({
 						{
 							name: "SR-O24",
 							model_name: "Electronic siren",
-							img: [
-								image_file +
-									"/other_product/" +
-									"SR-O24" +
-									".png",
-							],
+							img: [image_file + "/other_product/" + "SR-O24" + ".png"],
 							isActive: false,
 						},
 						{
 							name: "DR-O24",
 							model_name: "Door release",
-							img: [
-								image_file +
-									"/other_product/" +
-									"DR-O24" +
-									".png",
-							],
+							img: [image_file + "/other_product/" + "DR-O24" + ".png"],
 							isActive: false,
 						},
 						{
 							name: "EC-2P-3P",
 							model_name: "Emergency outlet",
-							img: [
-								image_file +
-									"/other_product/" +
-									"EC-2P-3P" +
-									".png",
-							],
+							img: [image_file + "/other_product/" + "EC-2P-3P" + ".png"],
 							isActive: false,
 						},
 						{
 							name: "EM-O24",
 							model_name: "Discharge indicating lamp",
-							img: [
-								image_file +
-									"/other_product/" +
-									"EM-O24" +
-									".png",
-							],
+							img: [image_file + "/other_product/" + "EM-O24" + ".png"],
 							isActive: false,
 						},
 						{
 							name: "VA-O24",
 							model_name: "Strobe",
-							img: [
-								image_file +
-									"/other_product/" +
-									"VA-O24" +
-									".png",
-							],
+							img: [image_file + "/other_product/" + "VA-O24" + ".png"],
 							isActive: false,
 						},
 						{
 							name: "EL-ST-C",
 							model_name: "Foot light",
-							img: [
-								image_file +
-									"/other_product/" +
-									"EL-ST-C" +
-									".png",
-							],
+							img: [image_file + "/other_product/" + "EL-ST-C" + ".png"],
 							isActive: false,
 						},
 					],
@@ -614,9 +460,7 @@ createApp({
 		modelClicked(event) {
 			activeProduct = this.products[this.activeProductIndex];
 			activeModel =
-				activeProduct.models[
-					this.activeModelIndex[this.activeProductIndex]
-				];
+				activeProduct.models[this.activeModelIndex[this.activeProductIndex]];
 			activeModel.isActive = false;
 			for (i = 0; i < activeProduct.models.length; i++) {
 				if (activeProduct.models[i].name === event.target.innerText) {
@@ -631,9 +475,7 @@ createApp({
 			const imageID = document.querySelector("#product_image");
 			activeProduct = this.products[this.activeProductIndex];
 			activeModel =
-				activeProduct.models[
-					this.activeModelIndex[this.activeProductIndex]
-				];
+				activeProduct.models[this.activeModelIndex[this.activeProductIndex]];
 			imageID.src = activeModel.img;
 		},
 		pmMenuActive() {

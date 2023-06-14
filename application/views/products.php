@@ -5,6 +5,13 @@
 	<img src="images/productspage/product_bg.gif" id="product-bg" />
 	<img src="images/productspage/product_title.png" id="product-title" />
 </div> -->
+
+<link rel="stylesheet" href="stylesheet/products.css">
+<!-- Background -->
+<div id="bg_div">
+	<img src="images/productspage/product_bg.gif" id="product-bg" />
+	<img src="images/productspage/product_title.png" id="product-title" />
+</div>
 <div class="main-divs" id="productsANDmodels">
 	<!-- Left Side Products -->
 	<div class="left-div">
@@ -60,5 +67,4 @@
 		</div>
 	</div>
 </div>
-
 <script src="js/products.js"></script>

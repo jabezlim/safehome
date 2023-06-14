@@ -5,7 +5,7 @@ class Products extends CI_Controller
 {
 	public function index()
 	{
-		$this->load->view('header');
+		$this->load->view('topnav');
 		$this->load->view('products');
 		$this->load->view('footer');
 	}

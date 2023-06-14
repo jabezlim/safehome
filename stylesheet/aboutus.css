@@ -2,9 +2,6 @@
   margin:0px;
   padding:0px;
 }
-body{
-  overflow:hidden;
-}
 .hidden{
   display:none;
 }
@@ -25,6 +22,7 @@ body{
     background: #70C3F2;
     border-radius: 50px;
     transition: top 0.3s ease;
+    z-index: 1;
   }
   
   .banner.sticky {
@@ -159,4 +157,67 @@ body{
   height:538px;
   left:68rem;
   border: 1px solid #70C3F2;
+}
+
+/* about us section*/
+
+.main{
+  display: flex;
+  height: auto;
+  position: absolute;
+  top:500px;
+  width:100%;
+  height:auto;
+}
+
+.container{
+  max-width: 400px;
+  display:block;
+  text-align: center;
+  margin-right: auto;
+  padding-left: 200px;
+  border-right: 1px solid black;
+  padding-right: 60px;
+}
+.container h1{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  padding-bottom:26px;
+  border-bottom: 1px solid #000000;
+  color: #70C3F2;
+}
+.container ul{
+  margin-top:20px;
+}
+.container ul li{
+  list-style: none;
+}
+.container ul li button{
+  margin-top: 24px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  background: none;
+  border:none;
+  border-radius: 50px;
+  width:300px;
+  color: #000000;
+  cursor: pointer;
+}
+.container_right{
+  max-width: 1260px;
+  height:100%;
+  margin-left: auto;
+}
+.container_right_top h1{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
 }

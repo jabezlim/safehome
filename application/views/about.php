@@ -27,7 +27,7 @@
                 <h1>About Us</h1>
               </div>
               <div class="container_right_bottom">
-                <img src="AboutUs_Image1.gif">
+                <img src="images\AboutUs_Image1.gif">
               </div>
             </div>
         </main>

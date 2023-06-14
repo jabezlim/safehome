@@ -29,7 +29,7 @@
   max-width: 400px;
   display:block;
   text-align: center;
-
+  height:100%;
   padding-left: 200px;
   border-right: 1px solid black;
   padding-right: 60px;
@@ -86,4 +86,9 @@
 .container_right_bottom{
   width: 977px;
   height: 988px;
+  height:100%;
+}
+.container_right_bottom img{
+  padding-top:20px;
+  padding-left:130px;
 }

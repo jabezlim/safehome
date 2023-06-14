@@ -1,0 +1,162 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+body{
+  overflow:hidden;
+}
+.hidden{
+  display:none;
+}
+.header{
+  position: absolute;
+  width: 1920px;
+  height: 384px;
+  left: 0px;
+  top: 0px;
+  width:100%;
+}
+.banner {
+    position: relative;
+    width: 1564px;
+    height: 128px;
+    left: calc(50% - 1564px/2);
+    top: 36px;
+    background: #70C3F2;
+    border-radius: 50px;
+    transition: top 0.3s ease;
+  }
+  
+  .banner.sticky {
+    position: fixed;
+    top: 0;
+  }
+  
+  .logo {
+    position: relative;
+    width: 211px;
+    height: 27px;
+    top:51px;
+    left:56px;
+  }
+
+.ProductsMenu{
+  position:absolute;
+  top:0;
+  left:389px;
+  color:white;
+  opacity:0.7;
+  width:200px;
+  height: 128px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+
+  background: transparent;
+  border:none;
+  cursor:pointer;
+}
+
+.ProductsMenu:hover {
+  opacity:1;
+}
+.nav{
+  display:none;
+  position:relative;
+  top:6rem;
+
+  width:1564px;
+  height:540px;
+}
+#productsMenuButton:hover + .nav{
+  display: block;
+}
+
+.nav_list{
+  list-style: none;
+  color:white;
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+
+  position:relative;
+  width:30rem;
+
+  background-color: #5DB9ED;
+  text-align: center;
+  z-index:1;
+}
+.nav_list li{
+  line-height: 60px;
+}
+.nav_list li:hover{
+  background-color: #70C3F2;
+}
+
+.HeaderTitles{
+  list-style: none;
+  position:absolute;
+  left:932px;
+  top:50px;
+}
+.HeaderTitles a{
+  color:white;
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-decoration: none;
+}
+.HeaderTitles li:last-child{
+  margin-right:0px;
+}
+.HeaderTitles li{
+  float:left;
+  margin-right: 55px;
+}
+
+.CompanyIntroduction{
+  position: absolute;
+  width: 318px;
+  height: 60px;
+  left: 340px;
+  top: 258px;
+}
+
+.Product{
+  position:static;
+}
+.Product_list{
+  position:absolute;
+  text-align: left;
+  list-style-type:none;
+  left:30rem;
+  top:0;
+  width:610px;
+  height:540px;
+}
+.Product_list:first-child{
+  background-color:#70C3F2;
+  opacity: .8;
+}
+.Product_list li{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  margin-left: 20px;
+
+}
+
+.menuPicture{
+  position:absolute;
+  top:0;
+  width:474px;
+  height:538px;
+  left:68rem;
+  border: 1px solid #70C3F2;
+}

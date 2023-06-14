@@ -1,17 +1,17 @@
 //banner disappears when scrolling down and reappears when scrolling up
 var prevScrollpos = window.pageYOffset;
 
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
+// window.onscroll = function() {
+//   var currentScrollPos = window.pageYOffset;
 
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("banner").classList.add("sticky");
-  } else {
-    document.getElementById("banner").classList.remove("sticky");
-  }
+//   if (prevScrollpos > currentScrollPos) {
+//     document.getElementById("banner").classList.add("sticky");
+//   } else {
+//     document.getElementById("banner").classList.remove("sticky");
+//   }
 
-  prevScrollpos = currentScrollPos;
-};
+//   prevScrollpos = currentScrollPos;
+// };
 //change border radius of the banner when hovering over ProductsMenuButton
 const productsMenuButton = document.getElementById('productsMenuButton');
 const banner = document.getElementById('banner');
@@ -61,3 +61,30 @@ function hideProductSlides() {
     menuPictures[i].classList.add('hidden');
   }
 }
+
+//change 
+var previousButton = null;
+
+function changeButtonColor_Border(event) {
+  var targetElement = event.target;
+  
+  if (targetElement.tagName === 'BUTTON') {
+    var targetButton = targetElement;
+    
+    if (previousButton !== null) {
+      previousButton.style.backgroundColor = '';
+      previousButton.style.color = '';
+    }
+    
+    targetButton.style.backgroundColor = '#70C3F2';
+    targetButton.style.color = 'white';
+    
+    previousButton = targetButton;
+  }
+}
+
+// Automatically click the first button on page load
+document.addEventListener('DOMContentLoaded', function() {
+  var buttons = document.querySelectorAll('.pages button');
+  buttons[0].click();
+});

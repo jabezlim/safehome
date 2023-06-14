@@ -1,5 +1,5 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed'); ?>
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="stylesheet/aboutus.css">
@@ -8,7 +8,7 @@
         <title>Tutorial</title>
     </head>
     <body>
-      <img src="images/bg_sub01.gif" class="header">
+      
         <div id="banner" class="banner">
           <a href="index.html" class="logo"><img src="images/SafeSystem Logo.png"></a>
           <button id="productsMenuButton" class="ProductsMenu" onmouseover="showMenu()" onmouseout="hideMenu()">ALL PRODUCTS</button>
@@ -122,7 +122,7 @@
             <li><a href="contact">CONTACT US</a></li>
           </ul>
         </div>
-        <img src="images/title_sub01.png" class="CompanyIntroduction">
+
           <script src="js/aboutus.js"></script>
     </body>
 </html>

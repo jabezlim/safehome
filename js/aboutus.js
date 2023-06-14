@@ -62,7 +62,7 @@ function hideProductSlides() {
   }
 }
 
-//change 
+ 
 var previousButton = null;
 
 function changeButtonColor_Border(event) {
@@ -80,6 +80,24 @@ function changeButtonColor_Border(event) {
     targetButton.style.color = 'white';
     
     previousButton = targetButton;
+    
+    // Get the index of the clicked button
+    var buttons = document.querySelectorAll('.pages button');
+    var index = Array.from(buttons).indexOf(targetButton);
+    
+    // Hide all headers and images
+    var headers = document.querySelectorAll('.container_right_top h1');
+    var images = document.querySelectorAll('.container_right_bottom img');
+    headers.forEach(function(header) {
+      header.style.display = 'none';
+    });
+    images.forEach(function(image) {
+      image.style.display = 'none';
+    });
+    
+    // Show the corresponding header and image
+    headers[index].style.display = 'block';
+    images[index].style.display = 'block';
   }
 }
 

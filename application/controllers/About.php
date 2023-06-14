@@ -6,5 +6,6 @@ class About extends CI_Controller {
 	{
 		$this->load->view('topnav');
 		$this->load->view('about');
+		$this->load->view('footer');
 	}
 }

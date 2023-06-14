@@ -5,7 +5,6 @@
         <link rel="stylesheet" href="stylesheet/aboutus.css">
         <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Rubik">
-        <title>Tutorial</title>
     </head>
     <body>
       

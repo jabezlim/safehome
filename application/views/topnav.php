@@ -122,6 +122,6 @@
           </ul>
         </div>
 
-          <script src="js/aboutus.js"></script>
+          <script src="js/topnav.js"></script>
     </body>
 </html>

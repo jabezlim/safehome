@@ -1,6 +1,11 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed'); ?>
 
-<div class="main-divs">
+<!-- Top Image -->
+<!-- <div class="top-div">
+	<img src="images/productspage/product_bg.gif" id="product-bg" />
+	<img src="images/productspage/product_title.png" id="product-title" />
+</div> -->
+<div class="main-divs" id="productsANDmodels">
 	<!-- Left Side Products -->
 	<div class="left-div">
 		<div class="left-div-inner">
@@ -24,7 +29,8 @@
 				<div class="table-column models_div">
 					<template v-for="items in products">
 						<ul v-if="items.isActive">
-							<li v-for="item in items.models" @click="modelClicked" :class="{left_div_clicked: item.isActive}">
+							<li v-for="item in items.models" @click="modelClicked"
+								:class="{left_div_clicked: item.isActive}">
 								{{ item.name }}
 							</li>
 						</ul>
@@ -36,19 +42,23 @@
 	<!-- Right Side Items -->
 	<div class="right-div">
 		<div class="right-inner-div">
-			<div class="model-header">MODEL NAME</div>
+			<div class="model-header">
+				<template v-if="products[activeProductIndex].models[activeModelIndex[activeProductIndex]]">
+					{{products[activeProductIndex].models[activeModelIndex[activeProductIndex]].model_name}}
+				</template>
+			</div>
 		</div>
-		<div class="product_images">
-			<img src="" id="product_image" />
+		<div id="product_image_div">
+			<div class="product_images">
+				<template v-if="products[activeProductIndex].models[activeModelIndex[activeProductIndex]]">
+					<template
+						v-for="images in products[activeProductIndex].models[activeModelIndex[activeProductIndex]].img">
+						<img :src="images" class="product_images" />
+					</template>
+				</template>
+			</div>
 		</div>
-	</div>	
+	</div>
 </div>
-<!-- FOOTER -->
-<div class="footer">
-      <img src="images/productspage/SafeSystem Logo.png" />
-    </div>
-  </div>
-</body>
 
 <script src="js/products.js"></script>
-</html>

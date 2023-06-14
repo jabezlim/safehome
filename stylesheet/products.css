@@ -27,13 +27,6 @@ ul {
 	display: none;
 }
 
-a {
-	text-decoration: none;
-}
-
-a, a:link, a:visited, a:hover, a:focus, a:active{
-  color:white;
-}
 /* TOP DIV */
 :root {
 	--header-x: calc((1920px - 1564px) / 2);
@@ -114,7 +107,7 @@ a, a:link, a:visited, a:hover, a:focus, a:active{
 
 	position: absolute;
 	height: 28px;
-	left: 600px;
+	left: calc(1110px - var(--header-x));
 	top: calc(87px - var(--header-y));
 }
 
@@ -233,7 +226,7 @@ a, a:link, a:visited, a:hover, a:focus, a:active{
 }
 
 .model-header {
-	font-size: 32px;
+	font-size: 28px;
 	width: auto;
 	height: 70px;
 	line-height: 70px;
@@ -243,8 +236,12 @@ a, a:link, a:visited, a:hover, a:focus, a:active{
 	color: #000000;
 }
 
-.product_images,
-#product_image {
+#product_image_div {
+	width: 100%;
+	padding-top: 50px;
+}
+
+.product_images {
 	width: 100%;
 }
 

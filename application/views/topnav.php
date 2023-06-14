@@ -12,8 +12,8 @@
 
   <div id="banner" class="banner">
     <a href="index.html" class="logo"><img src="images/SafeSystem Logo.png"></a>
-    <button id="productsMenuButton" class="ProductsMenu" onmouseover="showMenu()" onmouseout="hideMenu()">ALL
-      PRODUCTS</button>
+    <a href="products"><button id="productsMenuButton" class="ProductsMenu" onmouseover="showMenu()" onmouseout="hideMenu()">ALL
+      PRODUCTS</button></a>
     <div class="nav" id="nav_list_banner" onmouseover="showMenu()" onmouseout="hideMenu()">
       <ul class="nav_list">
 
@@ -128,4 +128,4 @@
     </ul>
   </div>
 
-  <script src="js/aboutus.js"></script>
+  <script src="js/topnav.js"></script>

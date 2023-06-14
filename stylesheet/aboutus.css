@@ -6,7 +6,7 @@
   display:none;
 }
 .header{
-  position: absolute;
+  position: relative;
   width: 1920px;
   height: 384px;
   left: 0px;
@@ -19,8 +19,8 @@
 .main{
   display: flex;
   height: auto;
-  position: absolute;
-  top:500px;
+  position: relative;
+  margin-top:100px;
   width:100%;
   height:auto;
 }

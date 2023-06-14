@@ -19,15 +19,24 @@
                 <li><button>About Us</button></li>
                 <li><button>About Us</button></li>
                 <li><button>About Us</button></li>
-                <li><button>About Us</button></li>
               </ul>
             </div>
             <div class="container_right">
-              <div class="container_right_top">
-                <h1>About Us</h1>
+              <div class="container_right_top" >
+                <h1 hidden>About Us</h1>
+                <h1 hidden>About Us 2</h1>
+                <h1 hidden>About Us 3</h1>
+                <h1 hidden>About Us 4</h1>
+                <h1 hidden>About Us 5</h1>
+                <h1 hidden>About Us 6</h1>
               </div>
               <div class="container_right_bottom">
-                <img src="images\AboutUs_Image1.gif">
+                <img src="images\AboutUs_Image1.gif" hidden>
+                <img src="images\AboutUs_Image2.gif" hidden>
+                <img src="images\AboutUs_Image3.gif" hidden>
+                <img src="images\AboutUs_Image4.gif" hidden>
+                <img src="images\AboutUs_Image6.gif" hidden>
+                <img src="images\AboutUs_Image7.gif" hidden>
               </div>
             </div>
         </main>

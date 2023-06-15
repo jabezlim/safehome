@@ -1,7 +1,7 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed'); ?>
     <!-- FOOTER -->
     <link rel="stylesheet" href="stylesheet/footer.css">
-    <div class="footer">
+    <footer class="footer">
       <img src="images/productspage/SafeSystem Logo.png" />
       <div class="Table">
         <h1>Hyperlinks</h1>
@@ -22,7 +22,7 @@
       </div>
       <hr class="footer_HR">
       <h1 class="CopyrightNote">Copyright 2013 SAFE SYSTEM ALL RIGHTS RESERVED</h1>
-    </div>
+  </footer>
 </body>
 
 </html>

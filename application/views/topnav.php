@@ -11,7 +11,7 @@
 <body>
 
   <div id="banner" class="banner">
-    <a href="index.html" class="logo"><img src="images/SafeSystem Logo.png"></a>
+    <a href="index.html" class="logo"><img src="images\topnav\SafeSystem Logo.png"></a>
     <a href="products"><button id="productsMenuButton" class="ProductsMenu" onmouseover="showMenu()" onmouseout="hideMenu()">ALL
       PRODUCTS</button></a>
     <div class="nav" id="nav_list_banner" onmouseover="showMenu()" onmouseout="hideMenu()">
@@ -27,7 +27,7 @@
             <li>SAFE-10-PC</li>
             <li>FACP for Linear Heat Detector</li>
           </ul>
-          <img src="images/dropdownPicTest.png" class="menuPicture hidden">
+          <img src="images\topnav\dropdownPicTest.png" class="menuPicture hidden">
         </li>
 
         <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Fire Alarm
@@ -38,14 +38,14 @@
             <li>BL-O24</li>
             <li>PL-O24</li>
           </ul>
-          <img src="images/dropdownPicTest2.png" class="menuPicture hidden">
+          <img src="images\topnav\dropdownPicTest2.png" class="menuPicture hidden">
         </li>
 
         <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Transponder
           <ul class="Product_list hidden">
             <li>SAFE UMUX-TERM</li>
           </ul>
-          <img src="images/Transponder.png" class="menuPicture hidden">
+          <img src="images\topnav\Transponder.png" class="menuPicture hidden">
         </li>
 
         <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Repeater
@@ -53,7 +53,7 @@
             <li>TERM-22</li>
             <li>TERM-44</li>
           </ul>
-          <img src="images/Repeater.png" class="menuPicture hidden">
+          <img src="images\topnav\Repeater.png" class="menuPicture hidden">
         </li>
 
         <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Fire Detector
@@ -66,7 +66,7 @@
             <li>SF-TERM-PLCAL</li>
             <li>Type 1 70℃ / 90℃ waterproof non-reusable type</li>
           </ul>
-          <img src="images/FireDetector.png" class="menuPicture hidden">
+          <img src="images\topnav\FireDetector.png" class="menuPicture hidden">
         </li>
 
         <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Exit Light
@@ -85,7 +85,7 @@
             <li>EL-CS250S-SV(One-sided) / EL-CS250D-SV(Double-sided)</li>
             <li>EL-WS250S-SV</li>
           </ul>
-          <img src="images/ExitLight.png" class="menuPicture hidden">
+          <img src="images\topnav\ExitLight.png" class="menuPicture hidden">
         </li>
 
         <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Supporting
@@ -95,7 +95,7 @@
             <li>Battery panel POW-O24</li>
             <li>Annunciator panel SP-O40</li>
           </ul>
-          <img src="images/SupportingEquipment.png" class="menuPicture hidden">
+          <img src="images\topnav\SupportingEquipment.png" class="menuPicture hidden">
         </li>
 
         <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Manual Station
@@ -104,7 +104,7 @@
             <li>PV-DAMPER-B</li>
             <li>PV-CO2-B</li>
           </ul>
-          <img src="images/ManualStation.png" class="menuPicture hidden">
+          <img src="images\topnav\ManualStation.png" class="menuPicture hidden">
         </li>
 
         <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Other Products
@@ -116,7 +116,7 @@
             <li>Strobe VA-O24</li>
             <li>Foot light EL-ST-C</li>
           </ul>
-          <img src="images/OtherProducts.png" class="menuPicture hidden">
+          <img src="images\topnav\OtherProducts.png" class="menuPicture hidden">
         </li>
 
       </ul>

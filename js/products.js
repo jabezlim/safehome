@@ -440,26 +440,22 @@ createApp({
 		},
 		productClicked(event) {
 			this.products[this.activeProductIndex].isActive = false;
-			for (i = 0; i < this.products.length; i++) {
-				if (this.products[i].name === event.target.innerText) {
-					this.products[i].isActive = true;
-					this.activeProductIndex = i;
-					break;
-				}
-			}
+			const clickedIndex = Array.from(event.target.parentNode.children).indexOf(
+				event.target
+			);
+			this.products[clickedIndex].isActive = true;
+			this.activeProductIndex = clickedIndex;
 		},
 		modelClicked(event) {
-			activeProduct = this.products[this.activeProductIndex];
-			activeModel =
+			let activeProduct = this.products[this.activeProductIndex];
+			let activeModel =
 				activeProduct.models[this.activeModelIndex[this.activeProductIndex]];
 			activeModel.isActive = false;
-			for (i = 0; i < activeProduct.models.length; i++) {
-				if (activeProduct.models[i].name === event.target.innerText) {
-					activeProduct.models[i].isActive = true;
-					this.activeModelIndex[this.activeProductIndex] = i;
-					break;
-				}
-			}
+			const clickedIndex = Array.from(event.target.parentNode.children).indexOf(
+				event.target
+			);
+			activeProduct.models[clickedIndex].isActive = true;
+			this.activeModelIndex[this.activeProductIndex] = clickedIndex;
 		},
 	},
 }).mount("#productsANDmodels");

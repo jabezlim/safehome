@@ -1,9 +1,10 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed'); ?>
 
+</div>
 <!-- FOOTER -->
-<link rel="stylesheet" href="stylesheet/footer.css">
+<link rel="stylesheet" href="<?=base_url('assets/stylesheet/footer.css');?>">
 <footer class="footer">
-  <img src="images/productspage/SafeSystem Logo.png" />
+  <img src="<?=base_url('assets/images/productspage/SafeSystem Logo.png');?>" />
   <div class="Table">
     <h1>Hyperlinks</h1>
     <ul>

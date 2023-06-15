@@ -3,7 +3,7 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="stylesheet/topnav.css">
+  <link rel="stylesheet" href="<?=base_url('assets/stylesheet/topnav.css');?>">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
@@ -11,41 +11,41 @@
 <body>
 
   <div id="banner" class="banner">
-    <a href="index.html" class="logo"><img src="images/SafeSystem Logo.png"></a>
-    <a href="products"><button id="productsMenuButton" class="ProductsMenu" onmouseover="showMenu()" onmouseout="hideMenu()">ALL
-      PRODUCTS</button></a>
+    <a href="<?=base_url('home');?>" class="logo"><img src="<?=base_url('assets/images/SafeSystem Logo.png');?>"></a>
+    <a href="<?=base_url('products');?>">
+      <button id="productsMenuButton" class="ProductsMenu" onmouseover="showMenu()" onmouseout="hideMenu()">
+        ALL PRODUCTS
+      </button>
+    </a>
     <div class="nav" id="nav_list_banner" onmouseover="showMenu()" onmouseout="hideMenu()">
       <ul class="nav_list">
-
-        <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Fire Alarm
-          Control Panel
+        <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Fire Alarm Control Panel
           <ul class="Product_list hidden">
-            <li>SAFE 2244 RC / SAFE 2244 GRC</li>
-            <li>SAFE UMUX-2244GRC</li>
-            <li>SAFE 2244 DRC</li>
-            <li>SAFE 220PC / 110PC / 80PC / 40PC / 30PC</li>
-            <li>SAFE-10-PC</li>
-            <li>FACP for Linear Heat Detector</li>
+            <li><a href="<?=base_url('products/index/1');?>">SAFE 2244 RC / SAFE 2244 GRC</a></a></li>
+            <li><a href="<?=base_url('products/index/2');?>">SAFE UMUX-2244GRC</a></li>
+            <li><a href="<?=base_url('products/index/3');?>">SAFE 2244 DRC</a></li>
+            <li><a href="<?=base_url('products/index/4');?>">SAFE 220PC / 110PC / 80PC / 40PC / 30PC</a></li>
+            <li><a href="<?=base_url('products/index/5');?>">SAFE-10-PC</a></li>
+            <li><a href="<?=base_url('products/index/6');?>">FACP for Linear Heat Detector</a></li>
           </ul>
-          <img src="images/dropdownPicTest.png" class="menuPicture hidden">
+          <img src="<?=base_url('assets/images/dropdownPicTest.png');?>" class="menuPicture hidden">
         </li>
 
-        <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Fire Alarm
-          Combination Panel
+        <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Fire Alarm Combination Panel
           <ul class="Product_list hidden">
             <li>T-ST / T-SU</li>
             <li>FR-I24</li>
             <li>BL-O24</li>
             <li>PL-O24</li>
           </ul>
-          <img src="images/dropdownPicTest2.png" class="menuPicture hidden">
+          <img src="<?=base_url('assets/images/dropdownPicTest2.png');?>" class="menuPicture hidden">
         </li>
 
         <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Transponder
           <ul class="Product_list hidden">
             <li>SAFE UMUX-TERM</li>
           </ul>
-          <img src="images/Transponder.png" class="menuPicture hidden">
+          <img src="<?=base_url('assets/images/Transponder.png');?>" class="menuPicture hidden">
         </li>
 
         <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Repeater
@@ -53,7 +53,7 @@
             <li>TERM-22</li>
             <li>TERM-44</li>
           </ul>
-          <img src="images/Repeater.png" class="menuPicture hidden">
+          <img src="<?=base_url('assets/images/Repeater.png');?>" class="menuPicture hidden">
         </li>
 
         <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Fire Detector
@@ -66,7 +66,7 @@
             <li>SF-TERM-PLCAL</li>
             <li>Type 1 70℃ / 90℃ waterproof non-reusable type</li>
           </ul>
-          <img src="images/FireDetector.png" class="menuPicture hidden">
+          <img src="<?=base_url('assets/images/FireDetector.png');?>" class="menuPicture hidden">
         </li>
 
         <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Exit Light
@@ -85,17 +85,16 @@
             <li>EL-CS250S-SV(One-sided) / EL-CS250D-SV(Double-sided)</li>
             <li>EL-WS250S-SV</li>
           </ul>
-          <img src="images/ExitLight.png" class="menuPicture hidden">
+          <img src="<?=base_url('assets/images/ExitLight.png');?>" class="menuPicture hidden">
         </li>
 
-        <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Supporting
-          Equipment
+        <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Supporting Equipment
           <ul class="Product_list hidden">
             <li>Auxiliary power panel POW-O24</li>
             <li>Battery panel POW-O24</li>
             <li>Annunciator panel SP-O40</li>
           </ul>
-          <img src="images/SupportingEquipment.png" class="menuPicture hidden">
+          <img src="<?=base_url('assets/images/SupportingEquipment.png');?>" class="menuPicture hidden">
         </li>
 
         <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Manual Station
@@ -104,7 +103,7 @@
             <li>PV-DAMPER-B</li>
             <li>PV-CO2-B</li>
           </ul>
-          <img src="images/ManualStation.png" class="menuPicture hidden">
+          <img src="<?=base_url('assets/images/ManualStation.png');?>" class="menuPicture hidden">
         </li>
 
         <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Other Products
@@ -116,16 +115,19 @@
             <li>Strobe VA-O24</li>
             <li>Foot light EL-ST-C</li>
           </ul>
-          <img src="images/OtherProducts.png" class="menuPicture hidden">
+          <img src="<?=base_url('assets/images/OtherProducts.png');?>" class="menuPicture hidden">
         </li>
 
       </ul>
     </div>
     <ul class="HeaderTitles">
-      <li><a href="about">ABOUT US</a></li>
-      <li><a href="certificate">CERTIFICATES</a></li>
-      <li><a href="contact">CONTACT US</a></li>
+      <li><a href="<?=base_url('about');?>">ABOUT US</a></li>
+      <li><a href="<?=base_url('certificate');?>">CERTIFICATES</a></li>
+      <li><a href="<?=base_url('contact');?>">CONTACT US</a></li>
     </ul>
   </div>
 
-  <script src="js/topnav.js"></script>
+  <script src="<?=base_url('assets/js/topnav.js');?>"></script>
+
+
+  <div style="margin-top:170px">

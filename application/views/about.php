@@ -1,12 +1,6 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed'); ?>
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="stylesheet/aboutus.css">
-        <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Rubik">
-    </head>
-    <body>
+
+    <link rel="stylesheet" href="stylesheet/aboutus.css">
         <img src="images/bg_sub01.gif" class="header">
         <img src="images/title_sub01.png" class="CompanyIntroduction">
     <main class="main">
@@ -41,5 +35,4 @@
             </div>
         </main>
           <script src="js/aboutus.js"></script>
-    </body>
-</html>
+

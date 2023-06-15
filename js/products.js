@@ -437,14 +437,6 @@ createApp({
 			const models_ul = document.querySelector(".models_div");
 			const products_ul = document.querySelector(".product-types");
 			models_ul.style.height = products_ul.clientHeight + "px";
-
-			// this.updateImage();
-
-			console.log(
-				this.products[this.activeProductIndex].models[
-					this.activeModelIndex[this.activeProductIndex]
-				].img
-			);
 		},
 		productClicked(event) {
 			this.products[this.activeProductIndex].isActive = false;
@@ -452,7 +444,6 @@ createApp({
 				if (this.products[i].name === event.target.innerText) {
 					this.products[i].isActive = true;
 					this.activeProductIndex = i;
-					// this.updateImage();
 					break;
 				}
 			}
@@ -466,29 +457,9 @@ createApp({
 				if (activeProduct.models[i].name === event.target.innerText) {
 					activeProduct.models[i].isActive = true;
 					this.activeModelIndex[this.activeProductIndex] = i;
-					// this.updateImage();
 					break;
 				}
 			}
-		},
-		updateImage() {
-			const imageID = document.querySelector("#product_image");
-			activeProduct = this.products[this.activeProductIndex];
-			activeModel =
-				activeProduct.models[this.activeModelIndex[this.activeProductIndex]];
-			imageID.src = activeModel.img;
-		},
-		pmMenuActive() {
-			this.pm_menu_isActive = true;
-			const active_banner = document.querySelector("#head_banner");
-			active_banner.style.borderBottomLeftRadius = 0;
-			active_banner.style.borderBottomRightRadius = 0;
-		},
-		pmMenuUnactive() {
-			this.pm_menu_isActive = false;
-			const active_banner = document.querySelector("#head_banner");
-			active_banner.style.borderBottomLeftRadius = 50 + "px";
-			active_banner.style.borderBottomRightRadius = 50 + "px";
 		},
 	},
 }).mount("#productsANDmodels");

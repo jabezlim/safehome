@@ -20,8 +20,9 @@
 }
 
 #product-bg {
+	font-size: 0;
 	position: relative;
-	width: 1920px;
+	max-width: 100%;
 	height: 384px;
 	left: 0px;
 	top: 0px;
@@ -30,7 +31,7 @@
 /* MAIN DIVS (LEFT AND RIGHT DIVS)*/
 .main-divs {
 	position: relative;
-	width: 100%;
+	max-width: 100%;
 	margin-top: 100px;
 	font-family: "Rubik";
 	font-style: normal;

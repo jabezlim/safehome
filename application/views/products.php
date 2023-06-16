@@ -44,16 +44,15 @@
 	<div class="right-div">
 		<div class="right-inner-div">
 			<div class="model-header">
-				<template v-if="products[activeProductIndex].models[activeModelIndex[activeProductIndex]]">
-					{{products[activeProductIndex].models[activeModelIndex[activeProductIndex]].model_name}}
+				<template v-if="products[activeProductArray[0]].models[activeProductArray[1]]">
+					{{products[activeProductArray[0]].models[activeProductArray[1]].model_name}}
 				</template>
 			</div>
 		</div>
 		<div id="product_image_div">
 			<div class="product_images">
-				<template v-if="products[activeProductIndex].models[activeModelIndex[activeProductIndex]]">
-					<template
-						v-for="images in products[activeProductIndex].models[activeModelIndex[activeProductIndex]].img">
+				<template v-if="products[activeProductArray[0]].models[activeProductArray[1]]">
+					<template v-for="images in products[activeProductArray[0]].models[activeProductArray[1]].img">
 						<img :src="images" class="product_images" />
 					</template>
 				</template>

@@ -3,10 +3,10 @@
 	padding: 0px;
 }
 
-.hidden{
-	display:none;
-  }
-  
+.hidden {
+	display: none;
+}
+
 .banner {
 	position: absolute;
 	width: 1564px;
@@ -141,6 +141,10 @@
 	font-size: 16px;
 	line-height: 40px;
 	margin-left: 20px;
+}
+.Product_list li:hover,
+.Product:hover {
+	cursor: pointer;
 }
 
 .menuPicture {

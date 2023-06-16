@@ -18,7 +18,19 @@
     <div class="nav" id="nav_list_banner" onmouseover="showMenu()" onmouseout="hideMenu()">
       <ul class="nav_list">
 
-        <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Fire Alarm
+        <template v-for="product in products">
+          <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()"
+            @click="productClicked">
+            {{ product.name }}
+            <ul class="Product_list hidden">
+              <li v-for="items in product.models">{{ items.name }}</li>
+            </ul>
+            <template v-if="product.preview">
+              <img :src="product.preview" class="menuPicture hidden">
+            </template>
+          </li>
+        </template>
+        <!-- <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Fire Alarm
           Control Panel
           <ul class="Product_list hidden">
             <li>SAFE 2244 RC / SAFE 2244 GRC</li>
@@ -31,94 +43,7 @@
           <img src="images\topnav\dropdownPicTest.png" class="menuPicture hidden">
         </li>
 
-        <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Fire Alarm
-          Combination Panel
-          <ul class="Product_list hidden">
-            <li>T-ST / T-SU</li>
-            <li>FR-I24</li>
-            <li>BL-O24</li>
-            <li>PL-O24</li>
-          </ul>
-          <img src="images\topnav\dropdownPicTest2.png" class="menuPicture hidden">
-        </li>
-
-        <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Transponder
-          <ul class="Product_list hidden">
-            <li>SAFE UMUX-TERM</li>
-          </ul>
-          <img src="images\topnav\Transponder.png" class="menuPicture hidden">
-        </li>
-
-        <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Repeater
-          <ul class="Product_list hidden">
-            <li>TERM-22</li>
-            <li>TERM-44</li>
-          </ul>
-          <img src="images\topnav\Repeater.png" class="menuPicture hidden">
-        </li>
-
-        <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Fire Detector
-          <ul class="Product_list hidden">
-            <li>DS-01</li>
-            <li>DS-02-70 / DS-02-90</li>
-            <li>DS-03</li>
-            <li>SF-OS-P LCAL</li>
-            <li>SF-DT-PLCAL</li>
-            <li>SF-TERM-PLCAL</li>
-            <li>Type 1 70℃ / 90℃ waterproof non-reusable type</li>
-          </ul>
-          <img src="images\topnav\FireDetector.png" class="menuPicture hidden">
-        </li>
-
-        <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Exit Light
-          <ul class="Product_list hidden">
-            <li>SF-LED-RF-SS(W)</li>
-            <li>SF-LED-CP-SS(W)</li>
-            <li>SF-LED-RF-MS(W)</li>
-            <li>SF-LED-LP-MS(W)</li>
-            <li>SF-LED-RF-MC(C) / SF-LED-RF-MD(C)</li>
-            <li>SF-LED-LP-MD(C)</li>
-            <li>SF-LED-RF-MC(W-WD)</li>
-            <li>SF-LED-SP-MC(W)</li>
-            <li>SF-LED-RF-LS(C)</li>
-            <li>EL-FR266SL3-P</li>
-            <li>SF-LED-SP-SC(W)</li>
-            <li>EL-CS250S-SV(One-sided) / EL-CS250D-SV(Double-sided)</li>
-            <li>EL-WS250S-SV</li>
-          </ul>
-          <img src="images\topnav\ExitLight.png" class="menuPicture hidden">
-        </li>
-
-        <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Supporting
-          Equipment
-          <ul class="Product_list hidden">
-            <li>Auxiliary power panel POW-O24</li>
-            <li>Battery panel POW-O24</li>
-            <li>Annunciator panel SP-O40</li>
-          </ul>
-          <img src="images\topnav\SupportingEquipment.png" class="menuPicture hidden">
-        </li>
-
-        <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Manual Station
-          <ul class="Product_list hidden">
-            <li>PV-SVP-B</li>
-            <li>PV-DAMPER-B</li>
-            <li>PV-CO2-B</li>
-          </ul>
-          <img src="images\topnav\ManualStation.png" class="menuPicture hidden">
-        </li>
-
-        <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Other Products
-          <ul class="Product_list hidden">
-            <li>Electronic siren SR-O24</li>
-            <li>Door release DR-O24</li>
-            <li>Emergency outlet EC-2P-3P</li>
-            <li>Discharge indicating lamp EM-O24</li>
-            <li>Strobe VA-O24</li>
-            <li>Foot light EL-ST-C</li>
-          </ul>
-          <img src="images\topnav\OtherProducts.png" class="menuPicture hidden">
-        </li>
+       -->
 
       </ul>
     </div>

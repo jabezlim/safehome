@@ -1,74 +1,76 @@
-// //banner disappears when scrolling down and reappears when scrolling up
-// var prevScrollpos = window.pageYOffset;
+//banner disappears when scrolling down and reappears when scrolling up
+var prevScrollpos = window.pageYOffset;
 
-// // window.onscroll = function() {
-// //   var currentScrollPos = window.pageYOffset;
+// window.onscroll = function() {
+//   var currentScrollPos = window.pageYOffset;
 
-// //   if (prevScrollpos > currentScrollPos) {
-// //     document.getElementById("banner").classList.add("sticky");
-// //   } else {
-// //     document.getElementById("banner").classList.remove("sticky");
-// //   }
+//   if (prevScrollpos > currentScrollPos) {
+//     document.getElementById("banner").classList.add("sticky");
+//   } else {
+//     document.getElementById("banner").classList.remove("sticky");
+//   }
 
-// //   prevScrollpos = currentScrollPos;
-// // };
-// //change border radius of the banner when hovering over ProductsMenuButton
-// const productsMenuButton = document.getElementById("productsMenuButton");
-// const banner = document.getElementById("banner");
+//   prevScrollpos = currentScrollPos;
+// };
+//change border radius of the banner when hovering over ProductsMenuButton
+const productsMenuButton = document.getElementById("productsMenuButton");
+const banner = document.getElementById("banner");
 
-// function showMenu() {
-// 	var nav = document.getElementById("nav_list_banner");
-// 	var menuColor = document.getElementById("productsMenuButton");
-// 	nav.style.display = "block";
-// 	menuColor.style.opacity = "1";
-// 	banner.style.borderBottomLeftRadius = "0";
-// 	banner.style.borderBottomRightRadius = "0";
-// }
+function showMenu() {
+	var nav = document.getElementById("nav_list_banner");
+	var menuColor = document.getElementById("productsMenuButton");
+	nav.style.display = "block";
+	menuColor.style.opacity = "1";
+	banner.style.borderBottomLeftRadius = "0";
+	banner.style.borderBottomRightRadius = "0";
+}
 
-// function hideMenu() {
-// 	var nav = document.getElementById("nav_list_banner");
-// 	var menuColor = document.getElementById("productsMenuButton");
-// 	nav.style.display = "none";
-// 	menuColor.style.opacity = "0.8";
-// 	banner.style.borderRadius = "50px";
-// }
+function hideMenu() {
+	var nav = document.getElementById("nav_list_banner");
+	var menuColor = document.getElementById("productsMenuButton");
+	nav.style.display = "none";
+	menuColor.style.opacity = "0.8";
+	banner.style.borderRadius = "50px";
+}
 
-// function showProductSlides() {
-// 	var productLists = document.getElementsByClassName("Product_list");
-// 	var menuPictures = document.getElementsByClassName("menuPicture");
+function showProductSlides() {
+	var productLists = document.getElementsByClassName("Product_list");
+	var menuPictures = document.getElementsByClassName("menuPicture");
 
-// 	for (var i = 0; i < productLists.length; i++) {
-// 		productLists[i].classList.add("hidden");
-// 		menuPictures[i].classList.add("hidden");
-// 	}
+	for (var i = 0; i < productLists.length; i++) {
+		productLists[i].classList.add("hidden");
+		menuPictures[i].classList.add("hidden");
+	}
 
-// 	var currentProductList = this.querySelector(".Product_list");
-// 	var currentMenuPicture = this.querySelector(".menuPicture");
+	var currentProductList = this.querySelector(".Product_list");
+	var currentMenuPicture = this.querySelector(".menuPicture");
 
-// 	if (currentProductList && currentMenuPicture) {
-// 		currentProductList.classList.remove("hidden");
-// 		currentMenuPicture.classList.remove("hidden");
-// 	}
-// }
+	if (currentProductList && currentMenuPicture) {
+		currentProductList.classList.remove("hidden");
+		currentMenuPicture.classList.remove("hidden");
+	}
+}
 
-// function hideProductSlides() {
-// 	var productLists = document.getElementsByClassName("Product_list");
-// 	var menuPictures = document.getElementsByClassName("menuPicture");
+function hideProductSlides() {
+	var productLists = document.getElementsByClassName("Product_list");
+	var menuPictures = document.getElementsByClassName("menuPicture");
 
-// 	for (var i = 0; i < productLists.length; i++) {
-// 		productLists[i].classList.add("hidden");
-// 		menuPictures[i].classList.add("hidden");
-// 	}
-// }
+	for (var i = 0; i < productLists.length; i++) {
+		productLists[i].classList.add("hidden");
+		menuPictures[i].classList.add("hidden");
+	}
+}
 
 const product_column_ul = document.querySelector(".product-types");
 const model_column_ul = document.querySelector("#fire-alarm-control-panel");
 const image_file = "images/productspage/products";
+const top_nav_image_path = "images/topnav";
 
 let activeProductArray = [0, 0];
 let products = [
 	{
 		name: "Fire Alarm Control Panel",
+		preview: top_nav_image_path + "/dropdownPicTest.png",
 		isActive: false,
 		models: [
 			{
@@ -133,6 +135,7 @@ let products = [
 	},
 	{
 		name: "Transponder",
+		preview: top_nav_image_path + "/Transponder.png",
 		isActive: false,
 		models: [
 			{
@@ -145,6 +148,7 @@ let products = [
 	},
 	{
 		name: "Repeater",
+		preview: top_nav_image_path + "/Repeater.png",
 		isActive: false,
 		models: [
 			{
@@ -163,6 +167,7 @@ let products = [
 	},
 	{
 		name: "Fire Detector",
+		preview: top_nav_image_path + "/FireDetector.png",
 		isActive: false,
 		models: [
 			{
@@ -216,6 +221,7 @@ let products = [
 	},
 	{
 		name: "Exit Light",
+		preview: top_nav_image_path + "/ExitLight.png",
 		isActive: false,
 		models: [
 			{
@@ -314,6 +320,7 @@ let products = [
 	},
 	{
 		name: "Supporting Equipment",
+		preview: top_nav_image_path + "/SupportingEquipment.png",
 		isActive: false,
 		models: [
 			{
@@ -335,6 +342,7 @@ let products = [
 	},
 	{
 		name: "Fire Alarm Combination Panel",
+		preview: top_nav_image_path + "/dropdownPicTest2.png",
 		isActive: false,
 		models: [
 			{
@@ -376,6 +384,7 @@ let products = [
 	},
 	{
 		name: "Manual Station",
+		preview: top_nav_image_path + "/ManualStation.png",
 		isActive: false,
 		models: [
 			{
@@ -400,6 +409,7 @@ let products = [
 	},
 	{
 		name: "Other Product",
+		preview: top_nav_image_path + "/OtherProducts.png",
 		isActive: false,
 		models: [
 			{
@@ -441,14 +451,13 @@ let products = [
 		],
 	},
 ];
-let a = 1;
-console.log(a);
 
 const { createApp } = Vue;
 
 createApp({
 	data() {
 		return {
+			activeProductArray,
 			products,
 		};
 	},
@@ -462,7 +471,46 @@ createApp({
 			for (i = 0; i < this.products.length; i++) {
 				this.products[i].models[0].isActive = true;
 			}
-			console.log(a);
+		},
+		getEvent(event) {
+			console.dir(event);
+			window.location = "products";
+		},
+		updateActiveProduct(newProd) {
+			this.products[this.activeProductArray[0]].isActive = false;
+			this.products[this.activeProductArray[0]].models[
+				this.activeProductArray[1]
+			].isActive = false;
+			this.activeProductArray = [newProd, 0];
+			this.products[this.activeProductArray[0]].isActive = true;
+			this.products[this.activeProductArray[0]].models[
+				this.activeProductArray[1]
+			].isActive = true;
+		},
+		updateActiveModel(newMod) {
+			this.products[this.activeProductArray[0]].models[
+				this.activeProductArray[1]
+			].isActive = false;
+			this.activeProductArray[1] = newMod;
+			this.products[this.activeProductArray[0]].models[
+				this.activeProductArray[1]
+			].isActive = true;
+		},
+		productClicked(event) {
+			window.location = "products";
+			console.log(activeProductArray);
+			const clickedIndex = Array.from(event.target.parentNode.children).indexOf(
+				event.target
+			);
+			this.updateActiveProduct(clickedIndex);
+			console.log(activeProductArray);
+		},
+		modelClicked(event) {
+			window.location = "products";
+			const clickedIndex = Array.from(event.target.parentNode.children).indexOf(
+				event.target
+			);
+			this.updateActiveModel(clickedIndex);
 		},
 	},
 }).mount("#banner");

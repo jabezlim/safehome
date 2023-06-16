@@ -127,7 +127,7 @@
     height: 300px;
     left:280px;
     bottom:37px;
-    border-radius: 50px;
+    border-radius: 0 50px 0 50px;
     -webkit-mask-image: linear-gradient(black, transparent);
     mask-image: linear-gradient(black, transparent);
 }
@@ -172,9 +172,8 @@
     position:relative;
     width: 470px;
     height: 300px;
-    left:280px;
-    bottom:37px;
-    border-radius: 50px;
+    left:245px;
+    bottom:72px;
     -webkit-mask-image: linear-gradient(black, transparent);
     mask-image: linear-gradient(black, transparent);
 }
@@ -192,7 +191,7 @@
     height: 64px;
     cursor:pointer;
     position:relative;
-    bottom:100px;
+    bottom:130px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .Partners{

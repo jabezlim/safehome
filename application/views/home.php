@@ -23,7 +23,7 @@
 			<button>MORE</button>
 		</div>
 		<div class="Company_History">
-			<h1>Company History</h1>
+			<h1>Company <br>History</h1>
 			<img src="images\homepage\Company_HistoryIMG.png">
 			<button>MORE</button>
 		</div>

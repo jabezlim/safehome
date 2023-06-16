@@ -1,3 +1,65 @@
-.footer {
-	background-color: rgb(255, 0, 0);
+footer{
+    background-color: #70C3F2;
+    height:420px;
+    width:100%;
+}
+footer img{
+    position:relative;
+    left: 0px;
+    top: 80px;
+    width: 305px;
+    height: 39px;
+}
+.Tables{
+    position:relative;
+    top:80px;
+    left: 760px;
+    display: flex;
+    float:left;
+}
+.Table:last-child{
+    position: relative;
+    left:200px;
+}
+.Table h1{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.Table ul a{
+    text-decoration: none;
+}
+.Table ul li{
+    padding-top:12px;
+    list-style: none;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #FFFFFF;
+}
+
+hr{
+    position: relative;
+    left: 76px;
+    top: 150px;
+    width:1750px;
+    border: 1px solid white;
+}
+.CopyrightNote{
+    position:relative;
+    top:200px;
+    text-align: center;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    
+    color: #FFFFFF;
 }

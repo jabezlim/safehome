@@ -1,0 +1,227 @@
+.HomePageBG{
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+    width:100%;
+}
+.HomePageSlogan{
+    position:absolute;
+    width: 571px;
+    height: 166px;
+    top:250px;
+    left:650px;
+}
+.Catalog_Section{
+    position:absolute;
+    width:1920px;
+    width:100%;
+    height:400px;   
+    top:650px;
+    display: flex;
+}
+.Catalog_Box{
+    position:relative;
+    top:50px;
+    left:200px;
+    width: 585px;
+    height: 235px;
+    border-radius: 50px;
+    background: linear-gradient(25deg, #70C3F2 55%, white 56%),
+    linear-gradient(-45deg, #70C3F2 80%, white 40%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.Catalog_Box h1{
+    position:relative;
+    left: 300px;
+    top: 40px;
+
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #70C3F2;
+}
+.Catalog_Box button{
+    background-color: white;
+    border-radius: 50px;
+    color:#70C3F2;
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    border:none;
+    width: 186px;
+    height: 64px;
+    cursor:pointer;
+    position:relative;
+    top:100px;
+    left:80px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.Catalog_Text{
+    position:relative;
+    top:50px;
+    left:400px; 
+}
+.Catalog_Text p{
+    position:relative;
+    top:20px;
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+}
+.Catalog_Text button{
+    background-color: #70C3F2;
+    border-radius: 50px;
+    color:white;
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    border:none;
+    width: 186px;
+    height: 64px;
+    cursor:pointer;
+    position:relative;
+    top:50px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.Cooperators_History{
+    position:relative;
+    width:1920px;
+    width:100%;
+    height:400px;   
+    display:flex;
+}
+.Cooperators{
+    position: relative;
+    left:100px;
+    width: 750px;
+    height: 300px;
+    border-radius:50px;
+    border:none;
+    box-shadow: 0 0px 0px 0px black, 0 0px 0px 0px black, 0px 0 0px -15px black, 0px 0 15px -4px black;
+}
+.Cooperators h1{
+    position:relative;
+    left:50px;
+    top:30px;
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: black
+}
+.Cooperators img{
+    position:relative;
+    width: 470px;
+    height: 300px;
+    left:280px;
+    bottom:37px;
+    border-radius: 50px;
+    -webkit-mask-image: linear-gradient(black, transparent);
+    mask-image: linear-gradient(black, transparent);
+}
+.Cooperators button{
+    background-color: #70C3F2;
+    border-radius: 50px;
+    color:white;
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    border:none;
+    width: 186px;
+    height: 64px;
+    cursor:pointer;
+    position:relative;
+    bottom:100px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.Company_History{
+    position: relative;
+    left:200px;
+    width: 750px;
+    height: 300px;
+    border-radius:50px;
+    border:none;
+    box-shadow: 0 0px 0px 0px black, 0 0px 0px 0px black, 0px 0 0px -15px black, 0px 0 15px -4px black;
+}
+.Company_History h1{
+    position:relative;
+    left:50px;
+    top:30px;
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: black
+}
+.Company_History img{
+    position:relative;
+    width: 470px;
+    height: 300px;
+    left:280px;
+    bottom:37px;
+    border-radius: 50px;
+    -webkit-mask-image: linear-gradient(black, transparent);
+    mask-image: linear-gradient(black, transparent);
+}
+.Company_History button{
+    background-color: #70C3F2;
+    border-radius: 50px;
+    color:white;
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    border:none;
+    width: 186px;
+    height: 64px;
+    cursor:pointer;
+    position:relative;
+    bottom:100px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.Partners{
+    position:relative;
+    top:100px;
+    width:1920px;
+    width:100%;
+    height:400px;
+    border-top: 1px solid black;
+}
+.Partners h1{
+    position:relative;
+    top:50px;
+    text-align: center;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 57px;
+    color: #70C3F2;
+}
+.Partners_IMG{
+    display: flex;
+    justify-content: center;
+}
+.Partners_IMG img{
+    position:relative;
+    top:100px;
+    padding-right: 40px;
+    width: 344;
+    height: 48px;
+}

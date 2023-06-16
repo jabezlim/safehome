@@ -11,7 +11,7 @@
 <body>
 
   <div id="banner" class="banner">
-    <a href="index.html" class="logo"><img src="images\topnav\SafeSystem Logo.png"></a>
+    <a href="home" class="logo"><img src="images\topnav\SafeSystem Logo.png"></a>
     <a href="products"><button id="productsMenuButton" class="ProductsMenu" onmouseover="showMenu()" onmouseout="hideMenu()">ALL
       PRODUCTS</button></a>
     <div class="nav" id="nav_list_banner" onmouseover="showMenu()" onmouseout="hideMenu()">

@@ -23,28 +23,13 @@
             @click="productClicked">
             {{ product.name }}
             <ul class="Product_list hidden">
-              <li v-for="items in product.models">{{ items.name }}</li>
+              <li class="product_models" v-for="items in product.models">{{ items.name }}</li>
             </ul>
             <template v-if="product.preview">
               <img :src="product.preview" class="menuPicture hidden">
             </template>
           </li>
         </template>
-        <!-- <li class="Product" onmouseover="showProductSlides.call(this)" onmouseout="hideProductSlides()">Fire Alarm
-          Control Panel
-          <ul class="Product_list hidden">
-            <li>SAFE 2244 RC / SAFE 2244 GRC</li>
-            <li>SAFE UMUX-2244GRC</li>
-            <li>SAFE 2244 DRC</li>
-            <li>SAFE 220PC / 110PC / 80PC / 40PC / 30PC</li>
-            <li>SAFE-10-PC</li>
-            <li>FACP for Linear Heat Detector</li>
-          </ul>
-          <img src="images\topnav\dropdownPicTest.png" class="menuPicture hidden">
-        </li>
-
-       -->
-
       </ul>
     </div>
     <ul class="HeaderTitles">

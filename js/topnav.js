@@ -66,6 +66,7 @@ const model_column_ul = document.querySelector("#fire-alarm-control-panel");
 const image_file = "images/productspage/products";
 const top_nav_image_path = "images/topnav";
 
+const ACTPRODKEY = "activeProductArray";
 let activeProductArray = [0, 0];
 let products = [
 	{
@@ -465,52 +466,24 @@ createApp({
 		this.startUp();
 	},
 	methods: {
-		startUp() {
-			// Initialise active products/models
-			this.products[0].isActive = true;
-			for (i = 0; i < this.products.length; i++) {
-				this.products[i].models[0].isActive = true;
-			}
-		},
-		getEvent(event) {
-			console.dir(event);
-			window.location = "products";
-		},
-		updateActiveProduct(newProd) {
-			this.products[this.activeProductArray[0]].isActive = false;
-			this.products[this.activeProductArray[0]].models[
-				this.activeProductArray[1]
-			].isActive = false;
-			this.activeProductArray = [newProd, 0];
-			this.products[this.activeProductArray[0]].isActive = true;
-			this.products[this.activeProductArray[0]].models[
-				this.activeProductArray[1]
-			].isActive = true;
-		},
-		updateActiveModel(newMod) {
-			this.products[this.activeProductArray[0]].models[
-				this.activeProductArray[1]
-			].isActive = false;
-			this.activeProductArray[1] = newMod;
-			this.products[this.activeProductArray[0]].models[
-				this.activeProductArray[1]
-			].isActive = true;
-		},
+		startUp() {},
 		productClicked(event) {
 			window.location = "products";
-			console.log(activeProductArray);
-			const clickedIndex = Array.from(event.target.parentNode.children).indexOf(
-				event.target
-			);
-			this.updateActiveProduct(clickedIndex);
-			console.log(activeProductArray);
-		},
-		modelClicked(event) {
-			window.location = "products";
-			const clickedIndex = Array.from(event.target.parentNode.children).indexOf(
-				event.target
-			);
-			this.updateActiveModel(clickedIndex);
+			if (event.target.classList.contains("product_models")) {
+				const clickedIndex = Array.from(
+					event.target.parentNode.children
+				).indexOf(event.target);
+				const clickedProductIndex = Array.from(
+					event.target.parentNode.parentNode.parentNode.children
+				).indexOf(event.target.parentNode.parentNode);
+				activeProductArray = [clickedProductIndex, clickedIndex];
+			} else {
+				const clickedIndex = Array.from(
+					event.target.parentNode.children
+				).indexOf(event.target);
+				activeProductArray = [clickedIndex, 0];
+			}
+			localStorage.setItem(ACTPRODKEY, JSON.stringify(activeProductArray));
 		},
 	},
 }).mount("#banner");

@@ -1,4 +1,4 @@
-createApp({
+let productVUE = createApp({
 	data() {
 		return {
 			activeProductArray,
@@ -14,6 +14,12 @@ createApp({
 			const models_ul = document.querySelector(".models_div");
 			const products_ul = document.querySelector(".product-types");
 			models_ul.style.height = products_ul.clientHeight + "px";
+			// get activeProductArray and initalise
+			this.activeProductArray = JSON.parse(localStorage.getItem(ACTPRODKEY));
+			this.products[this.activeProductArray[0]].isActive = true;
+			this.products[this.activeProductArray[0]].models[
+				this.activeProductArray[1]
+			].isActive = true;
 		},
 		updateActiveProduct(newProd) {
 			this.products[this.activeProductArray[0]].isActive = false;
@@ -47,5 +53,10 @@ createApp({
 			);
 			this.updateActiveModel(clickedIndex);
 		},
+		saveActiveProcuct() {
+			localStorage.setItem(ACTPRODKEY, JSON.stringify(this.activeProductArray));
+		},
 	},
 }).mount("#productsANDmodels");
+
+addEventListener("beforeunload", productVUE.saveActiveProcuct);

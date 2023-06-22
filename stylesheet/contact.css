@@ -5,18 +5,11 @@
     height:384px;
 }
 .ContactQuote{
-    width: 510px;
-    height: 61px;
     position:absolute;
     left: 290px;
     top: 248px;
 
 }
-
-*{
-    margin:0px;
-    padding:0px;
-  }
   .hidden{
     display:none;
   }
@@ -103,18 +96,120 @@
     height: 988px;
     height:100%;
   }
-  .container_right_bottom img{
-    padding-top:20px;
-    padding-left:130px;
+.ContactContainers{
+  position:relative;
+  left:130px;
+  top:50px;
+  padding-bottom:100px;
+}
+.Map{
+  position: relative;
+  width: 1000px;
+  height:450px;
+  border:none;
   }
-.container_right_bottom_title{
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    color: #000000;
-    position:relative;
-    left:150px;
-    top:30px;
+.MapInfo{
+  position:relative;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+.ContactContainers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1000px;
+}
+.Form input[type="text"]::placeholder {
+  color: white;
+}
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+.col {
+  margin-right: 100px;
+}
+
+.Form label {
+  display: block;
+  margin-bottom: 11px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  color: #000000;
+}
+
+.Form input[type="text"] {
+  width: 325px;
+  height: 75px;
+  padding: 10px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  background: #70C3F2;
+  border: 3px solid #20ADFD;
+  border-radius: 50px;
+  color: #FFFFFF;
+}
+.Form input[type="text"]:focus {
+  outline: none;
+}
+
+.Form input[type="text"]::placeholder,
+.Form textarea::placeholder {
+  color: #FFFFFF;
+  text-align: center;
+}
+.Form #subject {
+  width: 750px;
+  height: 75px;
+}
+
+.Form textarea {
+  width: 1200px;
+  height: 315px;
+  background: #70C3F2;
+  border: 3px solid #20ADFD;
+  border-radius: 50px;
+  padding: 10px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  resize: none;
+  outline:none;
+}
+
+.Form input[type="submit"] {
+  width: 325px;
+  height: 100px;
+  background: #70C3F2;
+  border: 3px solid #20ADFD;
+  border-radius: 50px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  cursor:pointer;
 }

@@ -11,6 +11,11 @@
   top: 0px;
   width:100%;
 }
+.CompanyIntroduction {
+	position: absolute;
+	left: 340px;
+	top: 258px;
+}
 
 /* about us section*/
 
@@ -85,8 +90,21 @@
   width: 977px;
   height: 988px;
   height:100%;
+  margin-left: 130px;
+  margin-top:50px;
 }
-.container_right_bottom img{
-  padding-top:20px;
-  padding-left:130px;
+.container_right_bottom_information h1{
+  position:relative;
+  padding-bottom: 30px;
+  color: #70C3F2;
+  font-size: 36px;
+  font-family: Ruda;
+  font-weight: 500;
+}
+.container_right_bottom_information p{
+  position:relative;
+  padding-bottom: 80px;
+  color: #000;
+  font-size: 22px;
+  font-family: Rubik;
 }

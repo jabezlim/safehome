@@ -123,7 +123,6 @@
     </div>
     <ul class="HeaderTitles">
       <li><a href="about">ABOUT US</a></li>
-      <li><a href="certificate">CERTIFICATES</a></li>
       <li><a href="contact">CONTACT US</a></li>
     </ul>
   </div>

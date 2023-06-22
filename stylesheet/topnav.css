@@ -91,7 +91,7 @@
 .HeaderTitles {
 	list-style: none;
 	position: absolute;
-	left: 932px;
+	left: 1132px;
 	top: 50px;
 }
 .HeaderTitles a {
@@ -108,14 +108,6 @@
 .HeaderTitles li {
 	float: left;
 	margin-right: 55px;
-}
-
-.CompanyIntroduction {
-	position: absolute;
-	width: 318px;
-	height: 60px;
-	left: 340px;
-	top: 258px;
 }
 
 .Product {

@@ -22,17 +22,17 @@ function changeButtonColor_Border(event) {
     
     // Hide all headers and images
     var headers = document.querySelectorAll('.container_right_top h1');
-    var images = document.querySelectorAll('.container_right_bottom img');
+    var divs = document.querySelectorAll('.container_right_bottom div');
     headers.forEach(function(header) {
       header.style.display = 'none';
     });
-    images.forEach(function(image) {
-      image.style.display = 'none';
+    divs.forEach(function(div) {
+      div.style.display = 'none';
     });
     
     // Show the corresponding header and image
     headers[index].style.display = 'block';
-    images[index].style.display = 'block';
+    divs[index].style.display = 'block';
   }
 }
 

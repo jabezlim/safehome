@@ -108,3 +108,10 @@
   font-size: 22px;
   font-family: Rubik;
 }
+.container_right_bottom_information p span{
+  position:relative;
+  color: #70C3F2;
+  font-size: 22px;
+  font-family: Rubik;
+  bottom:2px;
+}

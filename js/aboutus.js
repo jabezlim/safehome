@@ -41,3 +41,4 @@ document.addEventListener('DOMContentLoaded', function() {
   var buttons = document.querySelectorAll('.pages button');
   buttons[0].click();
 });
+

@@ -6,20 +6,19 @@
   <img src="images/productspage/SafeSystem Logo.png" />
   <div class="Tables">
     <div class="Table">
-      <h1>Hyperlinks</h1>
       <ul>
         <a href="home"><li>Home</li></a>
         <a href="about"><li>About us</li></a>
-        <a href="certificate"><li>Certificates</li></a>
         <a href="products"><li>Products</li></a>
+        <a href="contact"><li>Contact us</li></a>
       </ul>
     </div>
     <div class="Table">
-      <h1>Contacts</h1>
       <ul>
-        <li>TEL 031 425 0830 4</li>
-        <li>FAX 031 299 2260</li>
         <li>info@safesystem.co.kr</li>
+        <li>Unit 1 Kingspark Business Centre 152-178<br>
+Kingston Road, New Malden, Surrey,<br>
+UK / KT3 3ST</li>
       </ul>
     </div>
   </div>  

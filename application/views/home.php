@@ -6,9 +6,9 @@
 <main>
 	<section class="About_SafeSys">
 		<div class="About_SafeSys_Images">
-			<img href="images\homepage\IMG210111150048.jpg">
-			<img href="images\homepage\IMG210112094048.jpg">
-			<img href="images\homepage\IMG151015163958.jpg">
+			<img src="images\homepage\IMG210111150048.jpg" class="SafeSysImage">
+			<img src="images\homepage\IMG210112094048.jpg" class="SafeSysImage">
+			<img src="images\homepage\IMG151015163958.jpg" class="SafeSysImage">
 		</div>
 		<div class="About_SafeSys_Text">
 			<p>Safe System Co Ltd has been contributing to development<br> of firefighting in Korea  
@@ -56,7 +56,9 @@
 		</p>
 		<a href="products"><button>Discover</button></a>
 		</div>
-		<div class="AboutProductsImages">	
+			<img src="images\homepage\HorizontalSafe.jpg" class="ProductsImage">
+			<img src="images\homepage\VerticalSafe.jpg" class="ProductsImage">
+			<img src="images\homepage\WhiteWheel.jpg" class="ProductsImage">	
 		</div>
 	</section>
 	<section class="Contacts">

@@ -125,11 +125,14 @@
 .Form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; 
   width: 1000px;
+  height:800px;
+  background:rgba(126, 200, 244, .5);
+  
 }
 .Form input[type="text"]::placeholder {
-  color: white;
+  color: black;
 }
 
 .row {
@@ -142,30 +145,21 @@
   margin-right: 100px;
 }
 
-.Form label {
-  display: block;
-  margin-bottom: 11px;
-  font-family: 'Rubik';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 38px;
-  color: #000000;
-}
 
 .Form input[type="text"] {
-  width: 325px;
-  height: 75px;
+  position:relative;
+  top:75px;
+  width: 225px;
+  height: 50px;
   padding: 10px;
+  border-radius: 20px;
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 28px;
-  background: #70C3F2;
-  border: 3px solid #20ADFD;
-  border-radius: 50px;
-  color: #FFFFFF;
+  background:white;
+  border:none;
 }
 .Form input[type="text"]:focus {
   outline: none;
@@ -173,43 +167,46 @@
 
 .Form input[type="text"]::placeholder,
 .Form textarea::placeholder {
-  color: #FFFFFF;
+  color: black;
   text-align: center;
 }
 .Form #subject {
-  width: 750px;
-  height: 75px;
+  width: 575px;
+  height: 50px;
 }
 
 .Form textarea {
-  width: 1200px;
-  height: 315px;
-  background: #70C3F2;
-  border: 3px solid #20ADFD;
-  border-radius: 50px;
+  position:relative;
+  top:75px;
+  width: 675px;
+  height: 250px;
+  background:white;
+  border:none;
   padding: 10px;
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 28px;
-  color: #FFFFFF;
+  color: black;
   resize: none;
   outline:none;
+  border-radius: 20px;
 }
 
 .Form input[type="submit"] {
-  width: 325px;
-  height: 100px;
-  background: #70C3F2;
-  border: 3px solid #20ADFD;
+  position:relative;
+  top:75px;
+  width: 225px;
+  height: 50px;
+  background:white;
   border-radius: 50px;
+  border:none;
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 28px;
-  color: #FFFFFF;
-  text-transform: uppercase;
+  color: black;
   cursor:pointer;
 }

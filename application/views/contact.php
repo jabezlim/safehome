@@ -28,34 +28,28 @@
           <form class="Form" action="">
             <div class="row">
               <div class="col">
-          <label for="fname">First Name *</label>
           <input type="text" id="fname" name="firstname" placeholder="First Name" required>
         </div>
         <div class="col">
-          <label for="lname">Last Name *</label>
           <input type="text" id="lname" name="lastname" placeholder="Last Name" required>
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <label for="telephone">Telephone</label>
           <input type="text" id="telephone" name="telephone" placeholder="Telephone">
         </div>
         <div class="col">
-          <label for="email">Email *</label>
           <input type="text" id="email" name="email" placeholder="Email" required>
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <label for="subject">Subject *</label>
           <input type="text" id="subject" name="subject" placeholder="Subject" required>
         </div>
       </div>
       <div class="row">
         <div class="col">
-        <label for="message">Message *</label>
-        <textarea id="message" name="message" required></textarea>
+        <textarea id="message" name="message" placeholder="Message" required></textarea>
         </div>
       </div>
       <div class="row">
